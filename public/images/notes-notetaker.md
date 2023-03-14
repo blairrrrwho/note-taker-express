@@ -24,16 +24,43 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ToDo: 
 - next time: 
-        - don't do a develop folder??
-        - edit gitignore first; adding package-lock.json
+        - don't do a develop folder
+        - edit gitignore first; adding package-lock.json, etc. 
         - do all installs first
-- installs (?): 
-    1st: npm init
-    2nd: npm i express
+- installs: 
+    1st: npm init or npm init -y (basic package.json setup)
+    2nd: npm i express (installs express library)
+    3rd: nodemon -- save as dev dependency: 
+        npm i --save-dev nodemon
+        allows you to restart your server anytime you make changes (automatically)
+        delete: "test": "echo \"Error: no test specified\" && exit 1", in package.json
+        add: "devStart": "nodemon server.js"
+    Then create your server.js file
+        server code goes here
+    Command: npm run devStart
+        runs all the code in our server.js bc of the devStart we created
+        and when we make changes, it's logging those in the terminal and automatically rerunning our server.js file
     3rd: npm i path?
     4th: npm i fs? 
     5th: npm i inquirer@8.2.4??
     6th: npm i uuid??
+
+
+deleted from package.json:
+  "scripts": 
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+
+<!-- APP.GET TESTING -->
+// route get path 
+<!-- app.get('/', (req, res) => { -->
+    // console.log('here');
+    // res.status(500).send('hi');
+    // res.status(500).json({ message: "Error" })
+    // res.send('hi'); 
+    // send is good for testing purposes
+
+
 
 
 db.json file: 
