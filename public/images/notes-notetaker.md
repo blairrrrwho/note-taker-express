@@ -40,31 +40,14 @@ ToDo:
     Command: npm run devStart
         runs all the code in our server.js bc of the devStart we created
         and when we make changes, it's logging those in the terminal and automatically rerunning our server.js file
-    3rd: npm i path?
-    4th: npm i fs? 
-    5th: npm i inquirer@8.2.4??
-    6th: npm i uuid??
+    4th: require path and fs
+    5th: npm i uuid
 
 
 deleted from package.json:
   "scripts": 
     "test": "echo \"Error: no test specified\" && exit 1",
 
-
-<!-- APP.GET TESTING -->
-// route get path 
-<!-- app.get('/', (req, res) => { -->
-    // console.log('here');
-    // res.status(500).send('hi');
-    // res.status(500).json({ message: "Error" })
-    // res.send('hi'); 
-    // send is good for testing purposes
-    // res.download('server.js')
-
-
-// to make the server run
-// app.listen(3000)
-// console.log("server is now listening on port$");
 
 
 db.json file: 
@@ -86,3 +69,25 @@ db.json file:
         "text": "flops j, bruce, juno",
         "id": 2
     }
+
+
+
+
+
+
+
+<!-- APP.GET TESTING -->
+// route get path 
+<!-- app.get('/', (req, res) => { -->
+    // console.log('here');
+    // res.status(500).send('hi');
+    // res.status(500).json({ message: "Error" })
+    // res.send('hi'); 
+    // send is good for testing purposes
+    // res.download('server.js')
+
+
+// to make the server run
+// app.listen(3000)
+// console.log("server is now listening on port$");
+

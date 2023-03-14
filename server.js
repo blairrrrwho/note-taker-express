@@ -17,11 +17,21 @@ app.use(express.json()); //for parsing incoming json data
 app.use(express.urlencoded({extened: true})); // for parsing incoming string/array data
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-    res.send('yo man');
-    console.log(res.send);
-    console.log(req.send);
-});
+
+// use apiRoutes
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
+
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public/notes.html'));
+//     // res.send('yo man');
+//     // console.log(res.send);
+//     // console.log(req.send);
+// });
+
+// app.get('/notes', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public/notes.html'));
+// })
 
 
 // to make the server run

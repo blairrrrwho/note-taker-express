@@ -1,8 +1,13 @@
-// set up html routes(index.html & note.html)
-// GET /notes should return the notes.html file.
-// GET * should return the index.html file.
+// set up html routes
+const router = require('express').Router();
+const path = require('path');
 
-// route get path
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/public/index.html'))
-// });
+//  GET /notes returns the notes.html file
+router.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/notes.html'));
+});
+
+// GET * returns the index.html file 
+router.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../public/index.html'));
+});
