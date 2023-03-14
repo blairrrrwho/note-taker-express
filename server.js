@@ -3,9 +3,6 @@ const express = require('express');
 //  to set up the actual server
 const app = express();
 
-// const path = require('path');
-// const fs = require('fs');
-
 const PORT = process.env.PORT || 3001;
 
 // set up routes; request, response -- use routes folder
@@ -20,6 +17,7 @@ app.use(express.static('public'));
 
 // use apiRoutes
 app.use('/api', apiRoutes);
+// use htmlRoutes
 app.use('/', htmlRoutes);
 
 

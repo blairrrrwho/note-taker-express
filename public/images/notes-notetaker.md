@@ -52,8 +52,6 @@ deleted from package.json:
 
 
 
-
-
 <!-- APP.GET TESTING -->
 // route get path 
 <!-- app.get('/', (req, res) => { -->

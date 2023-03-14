@@ -20,7 +20,6 @@ router.get('/notes', (req, res) => {
     }
 });
 
-
 // POST /api/notes receives a new note to save on the request body, add it to the db.json file, then returns
     // the new note to the client
 // give each note a unique id when it's saved -- npm i uuid package 
@@ -51,37 +50,5 @@ router.delete('/notes/:id', (req, res) => {
     )
     res.json(note);
 });
-
-//     const params = req.params.id
-//     updateDataBase(params, notes);
-//     res.redirect('');
-//   });
-
-
-// function createNewNote (body, notesArray) {
-//     const newNote = body;
-//     notesArray.push(newNote);
-//     fs.writeFileSync(
-//         path.join(__dirname, '../../db/db.json'),
-//         JSON.stringify({notes: notesArray}, null, 2)
-//     );
-//     return newNote;
-// }; 
-
-// function updateDataBase(id, notesArray) {
-//     const deletedNote = id;
-//     for (let i = 0; i < notesArray.length; i++) {
-//       if (deletedNote === notesArray[i].id) {
-//         notesArray.splice(i, 1);
-//         fs.writeFileSync(
-//           path.join(__dirname, "../../db/db.json"),
-//           JSON.stringify({notes: notesArray}, null, 2), err => {
-//             if (err) {
-//               throw err;
-//             }
-//           });
-//       }
-//     }
-//   };
 
 module.exports = router;
