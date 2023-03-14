@@ -4,7 +4,8 @@
   "description": "[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
   },
   "author": "blairrrrwho",
   "license": "ISC",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/blairrrrwho/note-taker-express/issues"
   },
-  "homepage": "https://github.com/blairrrrwho/note-taker-express#readme"
+  "homepage": "https://github.com/blairrrrwho/note-taker-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
 }
