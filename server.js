@@ -14,7 +14,7 @@ const htmlRoutes = require('./routes/htmlRoutes/htmlRoutes');
 
 // set up data parsing
 app.use(express.json()); //for parsing incoming json data
-app.use(express.urlencoded({extened: true})); // for parsing incoming string/array data
+app.use(express.urlencoded({extended: true})); // for parsing incoming string/array data
 app.use(express.static('public'));
 
 

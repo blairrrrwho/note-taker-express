@@ -50,28 +50,6 @@ deleted from package.json:
 
 
 
-db.json file: 
-[
-    {
-        "title":"Test Title",
-        "text":"Test text",
-        "id": 1
-    }
-]
-
-    {
-        "title": "blair's zoo",
-        "text": "flops j, pickles, bruce, juno, mickie, sausage, roux",
-        "id": 1
-    },
-    {
-        "title": "blair's zoo in central",
-        "text": "flops j, bruce, juno",
-        "id": 2
-    }
-
-
-
 
 
 
