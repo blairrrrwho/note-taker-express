@@ -5,15 +5,12 @@ const fs = require('fs');
 const { v4:uuidv4 } = require('uuid');
 const {notes} = require('../../db/db.json');
 
+// GET /api/notes read the db.json file and returns all saved notes as json
 // show all notes in JSON data
 router.get('/notes', (req, res) => {
     let results = notes;
     res.json(results);
 });
-
-
-
-// GET /api/notes read the db.json file and returns all saved notes as json
 
 
 // POST /api/notes receives a new note to save on the request body, add it to the db.json file, then returns
@@ -25,6 +22,13 @@ router.post('/notes', (req, res) => {
     res.json(newNote);
 });
 
+router.delete("/notes/:id" , (req, res) => {
+    const params = req.params.id
+    updateDataBase(params, notes);
+    res.redirect('');
+  });
+
+
 function createNewNote (body, notesArray) {
     const newNote = body;
     notesArray.push(newNote);
@@ -34,5 +38,21 @@ function createNewNote (body, notesArray) {
     );
     return newNote;
 }; 
+
+function updateDataBase(id, notesArray) {
+    const deletedNote = id;
+    for (let i = 0; i < notesArray.length; i++) {
+      if (deletedNote === notesArray[i].id) {
+        notesArray.splice(i, 1);
+        fs.writeFileSync(
+          path.join(__dirname, "../../db/db.json"),
+          JSON.stringify({notes: notesArray}, null, 2), err => {
+            if (err) {
+              throw err;
+            }
+          });
+      }
+    }
+  };
 
 module.exports = router;

@@ -3,8 +3,8 @@ const express = require('express');
 //  to set up the actual server
 const app = express();
 
-const path = require('path');
-const fs = require('fs');
+// const path = require('path');
+// const fs = require('fs');
 
 const PORT = process.env.PORT || 3001;
 
