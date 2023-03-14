@@ -7,7 +7,7 @@ const {notes} = require('../../db/db.json');
 
 // GET /api/notes read the db.json file and returns all saved notes as json
 // show all notes in JSON data
-router.get('/notes', (req, res) => {
+router.get('/api/notes', (req, res) => {
     let results = notes;
     res.json(results);
 });
@@ -16,7 +16,7 @@ router.get('/notes', (req, res) => {
 // POST /api/notes receives a new note to save on the request body, add it to the db.json file, then returns
     // the new note to the client
     // give each note a unique id when it's saved -- npm i uuid package 
-router.post('/notes', (req, res) => {
+router.post('/api/notes', (req, res) => {
     req.body.id = uuidv4();
     const newNote = createNewNote(req.body, notes);
     res.json(newNote);
