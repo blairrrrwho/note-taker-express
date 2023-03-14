@@ -1,14 +1,22 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "blairrrrwho",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blairrrrwho/note-taker-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blairrrrwho/note-taker-express/issues"
+  },
+  "homepage": "https://github.com/blairrrrwho/note-taker-express#readme"
 }
