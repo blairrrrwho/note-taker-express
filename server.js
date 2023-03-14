@@ -9,7 +9,7 @@ const fs = require('fs');
 const PORT = process.env.PORT || 3001;
 
 // set up routes; request, response -- use routes folder
-const apiRoutes = require('./routes/apiRoutes/apiNotesRoutes');
+const apiRoutes = require('./routes/apiRoutes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes/htmlRoutes');
 
 // set up data parsing
@@ -22,19 +22,9 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'public/notes.html'));
-//     // res.send('yo man');
-//     // console.log(res.send);
-//     // console.log(req.send);
-// });
-
-// app.get('/notes', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'public/notes.html'));
-// })
 
 
 // to make the server run
 app.listen(PORT, () => {
-    console.log(`Server is now listening on Port ${PORT}`);
+    console.log(`Server is now listening on Port ${PORT}. How are you?!`);
 });
