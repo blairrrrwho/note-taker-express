@@ -59,8 +59,12 @@ deleted from package.json:
     // res.status(500).json({ message: "Error" })
     // res.send('hi'); 
     // send is good for testing purposes
+    // res.download('server.js')
 
 
+// to make the server run
+// app.listen(3000)
+// console.log("server is now listening on port$");
 
 
 db.json file: 
