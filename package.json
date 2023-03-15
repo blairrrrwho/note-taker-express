@@ -4,8 +4,8 @@
   "description": "[![License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
   "main": "server.js",
   "scripts": {
-    "start": "server.js",
-    "dev": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
   },
   "author": "blairrrrwho",
   "license": "ISC",
