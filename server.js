@@ -11,9 +11,9 @@ const apiRoutes = require('./routes/apiRoutes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes/htmlRoutes');
 
 // 5. sets up middleware to parse incoming requests; set up data parsing
-app.use(express.static('public')); // middleware used to serve static files in the 'public' folder
 app.use(express.json()); // middleware for parsing incoming JSON data
 app.use(express.urlencoded({extended: true})); // middleware used for parsing incoming string/array data
+app.use(express.static('public')); // middleware used to serve static files in the 'public' folder
 
 
 // set up routes; request, response -- use routes folder
