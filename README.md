@@ -5,8 +5,8 @@
 ## Description
 This is an application that can be used to write and save notes. It will use an Express.js back end and will save and retrieve note data from a JSON file. This application's front end was created already by default starter code. I built the back end and connected the back end to the front end.  
 The entire application was then successfully deployed to Heroku.  
-During the build of this application, the main focus was back end code. The initial start of building the back end was a bit rough, but express initializes a lot of useful things that make it easier than it seems.  
-I did go back and try to refactor the back end code a bit to clean it up and make it as short and efficient as possible. And while the front end wasn't the focus, I did dabble in some of its styling; not because I'm THAT picky, but because that light blue color made my eyes hurt after looking at over and over again lol. Also must personalize the app in some way ^_^
+
+I did go back and try to refactor the back end code a bit to clean it up and make it as short and efficient as possible. And while the front end wasn't the focus since it was given, I did dabble in some of its styling; that light blue color isn't pleasing to look at over and over again lol.
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
@@ -20,7 +20,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - [Contact Information](#contact-information)
 
 ## Installation
-To use this application, no installation is necessary; it's a web-based app.
+No installation is necessary to use this application.
 
 ## Usage (Instructions/How-To Use)
 Opening the link brings you to the application's landing page. Click the 'Get Started' button to start creating your notes.  
