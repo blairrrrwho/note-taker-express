@@ -1,8 +1,10 @@
-// sets up several API routes using the express router
-// set up api routes
+// sets up several API routes for handling API requests using express server:
+    // one for reading all notes
+    // one for reading a specific note
+    // one for creating a new note
+    // one for deleting a specific note
 
-// imports the express router library, the path library, the fs (file system) library, and the uuid library,
-    // which provides utilities for generating unique IDs
+// imports the express router library, the path library, the fs (file system) library, and the uuid library
 const router = require('express').Router();
 const path = require('path');
 const fs = require('fs');
@@ -14,8 +16,7 @@ const note = require('../../db/db.json');
 
 // show all notes in JSON data
 // defines a route for handling GET requests to the /api/notes URL path
-// when a user navigates to this URL, the server will respond by sending the JSON data stored in the note array using the res.json() method
-    // with that id using the res.json() method
+// server will respond by sending the JSON data stored in the note array 
 router.get('/notes', (req, res) => {
     res.json(note);
 });
@@ -32,13 +33,9 @@ router.get('/notes', (req, res) => {
 });
 
 // defines a route for handling POST requests to the /api/notes URL path
-// when a user submits a new note via a POST request to this URL, the server will respond by createing a new note object with a unique id   
-    // using the uuidv4() method, adding it to the note array, and then writing the updated note array to the db.json file
-    // using the fs.writeFileSync() method
-// finally, the server will respond by sending the updated note array as JSON using the res.json() method
-// POST /api/notes receives a new note to save on the request body, add it to the db.json file, then returns
-    // the new note to the client
-// give each note a unique id when it's saved -- npm i uuid package 
+// when a user submits a new note via a POST request, the server will respond by creating a new note object with a unique id,
+    // adding it to the note array, and then writing the updated note array to the db.json file
+    // the server will respond by sending the updated note array as JSON using the res.json() method
 router.post('/notes', (req, res) => {
     const newNote = {
         "title": req.body.title,
@@ -54,10 +51,7 @@ router.post('/notes', (req, res) => {
 });
 
 // defines a route for handling DELETE requests to the /api/notes:id URL path
-// this route urses a URL parameter :id to match the id of the note the user wants to delete
-// when a user submits a DELETE request to this URL with a specific id, the server will respond by finding and removing
-    // the note with that id from the note array, writing the updated note array to the db.json file, and then sending the
-    // update note array as JSON using the res.json()method
+// this route uses a URL parameter :id to match the id of the note the user wants to delete
 // delete note by user
 router.delete('/notes/:id', (req, res) => {
     for (let i = 0; i < note.length; i++) {
@@ -74,10 +68,3 @@ router.delete('/notes/:id', (req, res) => {
 
 // exports the router module for use in the main server file
 module.exports = router;
-
-// summary:
-// sets up several routes for handling API requests in an express server:
-    // one for reading all notes
-    // one for reading a specific note
-    // one for creating a new note
-    // one for deleting a specific note
