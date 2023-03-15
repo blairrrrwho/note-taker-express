@@ -3,14 +3,12 @@
 # Note Taker Express
 
 ## Description
-This is a web-based application that used Node.js and Express.js to create a note taking app that lets the user create, store, and delete notes.
+This is an application that can be used to write and save notes. It will use an Express.js back end and will save and retrieve note data from a JSON file. This application's front end was created already by default starter code. I built the back end and connected the back end to the front end.  
+The entire application was then successfully deployed to Heroku.  
+During the build of this application, the main focus was back end code. The initial start of building the back end was a bit rough, but express initializes a lot of useful things that make it easier than it seems.  
+I did go back and try to refactor the back end code a bit to clean it up and make it as short and efficient as possible. And while the front end wasn't the focus, I did dabble in some of its styling; not because I'm THAT picky, but because that light blue color made my eyes hurt after looking at over and over again lol. Also must personalize the app in some way ^_^
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 ## Table of Contents
 - [Installation](#installation)
@@ -19,44 +17,37 @@ Provide a short description explaining the what, why, and how of your project. U
 - [Technologies](#technologies)
 - [Credits](#credits)
 - [License](#license)
-- [Features](#features)
-- [Contribution](#how-to-contribute)
-- [Tests](#tests)
 - [Contact Information](#contact-information)
 
 ## Installation
+To use this application, no installation is necessary; it's a web-based app.
 
 ## Usage (Instructions/How-To Use)
+Opening the link brings you to the application's landing page. Click the 'Get Started' button to start creating your notes.  
+Enter a new note title in the bigger text box and the note details in the smaller text box. Once you've added text to these two sections, a save icon will appear in the top right corner of the page. Click it to save the note; it will populate in the left-hand column along with the existing saved notes. To create a new note, click the plus sign in the top right corner.  
+To view an existing note, click on its title. To delete a note, click the trash can displayed for that note.  
+To return to the landing page, click the 'Note Taker' button in the top left corner. 
 
 ## Deployment
-Live URL deployed with Heroku: <a href="https://incredible-note-taker-express.herokuapp.com/">Note-Taker-Express</a>
+Live URL deployed to Heroku: <a href="https://incredible-note-taker-express.herokuapp.com/">Note-Taker-Express</a>
 
 <!-- in the parentheses is just the relative path to the screenshot-->
 ![Full Demo GIF](./public/assets/images/FullDemoVid.gif)
 ![Screenshot of Homepage](./public/assets/images/screenshotHomepage.png)
-<!-- ![Screenshot of default add notes page](./public/assets/images/screenshotNotesDefault.png)
-![Screenshot of Demo add notes](./public/assets/images/screenshotNotesAdd.png) -->
+![Screenshot of default add notes page](./public/assets/images/screenshotNotesDefault.png)
+![Screenshot of Demo add notes](./public/assets/images/screenshotNotesAdd.png)
 
 ## Technologies
-Node.js, Express.js, JavaScript, HTML, CSS,,,
+Node.js, Express.js, JavaScript, HTML, CSS, Bootstrap
 
 ## Credits
-List your collaborators, if any, with links to their GitHub profiles.
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-If you followed tutorials, include links to those here as well.
+Starter Code: 
+
+Youtube videos / express js crash course - Traversy Media <a href="https://www.youtube.com/watch?v=L72fhGm1tfE&list=PLKFBXWhgMu_MHrrELsoH9BLPRBUXM-SXt&index=5">Express JS Crash Course</a>
+Net Ninja YouTube Videos: <a href="https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU">Node.js Crash Course Tutorial</a>
 
 ## License
 This project is licensed under the MIT license. For more information about this license and what it entails, visit the MIT website <a href="https://opensource.org/licenses/MIT">here</a>.
-
-## Features
-If your project has a lot of features, list them here.
-
-## How to Contribute
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-
 
 ## Contact Information
   If you liked this project and want to see more, feel free to check out my other repos [here](https://github.com/blairrrrwho).  
