@@ -35,15 +35,17 @@ Live URL deployed to Heroku: <a href="https://incredible-note-taker-express.hero
 ![Full Demo GIF](./public/assets/images/FullDemoVid.gif)
 ![Screenshot of Homepage](./public/assets/images/screenshotHomepage.png)
 ![Screenshot of default add notes page](./public/assets/images/screenshotNotesDefault.png)
+![Screenshot of blank textboxes](./public/assets/images/screenshotNewNote.png)
 ![Screenshot of Demo add notes](./public/assets/images/screenshotNotesAdd.png)
 
 ## Technologies
 Node.js, Express.js, JavaScript, HTML, CSS, Bootstrap
 
 ## Credits
-Starter Code: 
+<a href= "https://github.com/coding-boot-camp/miniature-eureka">Starter Code</a>
 
-Youtube videos / express js crash course - Traversy Media <a href="https://www.youtube.com/watch?v=L72fhGm1tfE&list=PLKFBXWhgMu_MHrrELsoH9BLPRBUXM-SXt&index=5">Express JS Crash Course</a>
+Youtube videos / express js crash course - Traversy Media <a href="https://www.youtube.com/watch?v=L72fhGm1tfE&list=PLKFBXWhgMu_MHrrELsoH9BLPRBUXM-SXt&index=5">Express JS Crash Course</a>  
+
 Net Ninja YouTube Videos: <a href="https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU">Node.js Crash Course Tutorial</a>
 
 ## License
